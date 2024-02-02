@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .poppins-regular-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="poppins-regular-italic] " >
+  <header class="md:container md:mx-auto">
+    <section >
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost pb-9 text-xl lg:text-4xl underline hover:underline-offset-4 text-primary">Krishnando</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img alt="Tailwind CSS Navbar component" src="./images/icons.jpg"  />
+              </div>
+            </div>
+            <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="mb-15">
+      <div class="hero min-h-screen" style="background-image: url(./images/web.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-neutral-content">
+          <div class="max-w-md hidden lg:block md:block xl:block ">
+            <div class="hero relative lg:-left-52 lg:-mb-40 bg-base-200">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Email</span>
+                      </label>
+                      <input type="email" placeholder="email" class="input input-bordered text-black" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Message</span>
+                      </label>
+                      <input type="text" placeholder="message" class="input input-bordered text-black" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-md lg:hidden md:hidden xl:hidden ">
+        <div class="hero bg-base-200">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Email</span>
+                  </label>
+                  <input type="email" placeholder="email" class="input input-bordered text-black" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Message</span>
+                  </label>
+                  <input type="text" placeholder="message" class="input input-bordered text-black" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <div class="divider divider-info">
+    <span class="loading loading-infinity loading-sm"></span>
+    <span class="loading loading-infinity loading-md"></span>
+    <span class="loading loading-infinity loading-lg"></span>
+    <span class="loading loading-infinity loading-lg"></span>
+  </div>
+  <main>
+    <section>
+      <div>
+        <div class="hero grid bg-base-200">
+          <div class="hero-content justify-between gap-20 flex-col lg:flex-row-reverse">
+            <div>
+              <img src="./images/icons.jpg" class=" lg:max-w-sm rounded-lg shadow-2xl" />
+            </div>
+            <div class="">
+              <h3 class="bg-[#cfc4c4] justify-center text-center px-3 w-[160px] lg:text-2xl font-bold text-xl lg:font-bold">Hello <span class="im-user text-xl font-bold lg:text-2xl lg:font-extrabold text-[red]">I am</span></h3>
+              <h1 class="text-5xl text-primary user-name font-extrabold underline hover:underline-offset-4 ">Krishnando Biplob</h1>
+              <p class="py-6">As a web developer, I have grown up with technology. I am able to create web sites <br> and applications through languages or frameworks. I specialize in database design <br> and management, server side logic, and client side scripting. I am interested in new <br> technologies and enthusiastic to collaborate with the team. I try to learn new <br> techniques from time to time to improve my development.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-flow-row lg:grid-flow-col justify-between">
+        <div class="hero lg:min-w-full lg:min-h-screen justify-start align-bottom bg-base-200">
+          <div class="hero-content flex-col lg:flex-col">
+            <div>
+              <img src="./images/education.jpg" class="justify-start lg:w-[400px] rounded-xl" alt="">
+            </div>
+            <h1 class="text-5xl py-3 px-3 bg-[#cfc4c4] font-extrabold underline hover:underline-offset-4 ">MY <span class="im-user text-xl lg:text-5xl lg:font-extrabold text-[red]">EDUCATION</span></h1>
+            <div class="drawer drawer-end">
+              <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+              <div class="drawer-content">
+                <!-- Page content here -->
+                <label for="my-drawer-4" class="drawer-button btn btn-primary">Open drawer</label>
+                  <span class="loading loading-bars loading-xs"></span>
+                  <span class="loading loading-bars loading-sm"></span>
+                  <span class="loading loading-bars loading-md"></span>
+                  <span class="loading loading-bars loading-lg"></span>
+                
+              </div> 
+              <div class="drawer-side">
+                <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                <ul class="menu p-4 lg:w-[50%] min-h[85%] bg-base-200 text-base-content">
+                  <!-- Sidebar content here -->
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-[red] text-xl font-bold underline hover:underline-offset-4 ">
+                      Primary School
+                    </div>
+                    <div class="collapse-content font-bold"> 
+                      <p>40 No. Bhaluka Model Govt. Primary School</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl text-[red]  font-bold underline hover:underline-offset-4 ">
+                      High School
+                    </div>
+                    <div class="collapse-content font-bold"> 
+                      <p>Bhaluka Pilot High School</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-primary text-xl font-extrabold underline hover:underline-offset-4 ">
+                      Currently Studying Now.
+                    </div>
+                    <div class="collapse-content font-bold"> 
+                      <p>Mymensingh Polytechnic Institute</p>
+                      <p>Computer science And Engineering</p>
+                      <p>
+                        Session: 21-22
+                      </p>
+                    </div>
+                    
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-primary text-xl font-extrabold underline hover:underline-offset-4 ">
+                      Currently Studying Now.
+                    </div>
+                    <div class="collapse-content font-bold"> 
+                      <p>Programming Hero</p>
+                      <p>Web development</p>
+                      <p>
+                        Batch: 9
+                      </p>
+                    </div>
+                    
+                  </div>
+                  <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer-4" class="drawer-button btn btn-primary">Close drawer</label>
+                  </div> 
+                  
+                  </ul>
+                 </div>
+                </div>
+               <div>
+             </div>
+            </div>
+            </div>
+            <div>
+              <img src="./images/user.6.jpg" class="lg:w-[90%] rounded-xl " alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div>
+          <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./images/user5.jpg" class="lg:max-w-sm rounded-lg user-img-1" />
+              <div>
+                <div class="flex user-5 flex-col lg:flex-row gap-5">
+                  <div class="card lg:w-[400px] lg:h-[200px] shadow-xl image-full">
+                    <figure><img src="./images/coolBak.png" class="container" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl font-bold">Phone</h2>
+                      <p class="font-bold underline"><i class="fa-solid fa-phone-volume"></i> 01875201800</p>
+                      <p class="font-bold underline"><i class="fa-solid fa-phone-volume"></i> 0176614435</p>
+                    </div>
+                  </div>
+                  <div class="card user-4 lg:w-[400px] lg:h-[200px] image-full">
+                    <figure><img src="./images/coolBak.png" class="container" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl font-bold">Email</h2>
+                      <p class="font-bold underline"><i class="fa-solid fa-envelope"></i> krishnandobiplob@gmail.com</p>
+                      <p class="font-bold underline"><i class="fa-solid fa-envelope"></i> krsnanandobiplob@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="card mt-6 user-3 lg:ml-20 lg:w-[400px] lg:h-[200px] image-full">
+                    <figure><img src="./images/coolBak.png" class="container" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl font-bold">Address</h2>
+                      <p class="font-bold underline"><i class="fa-solid fa-address-card"></i> Bhaluka, 11/3 Borta</p>
+                      <p class="font-bold underline"><i class="fa-solid fa-address-card"></i> Bhaluka, Mymensingh</p>
+                    </div>
+                  </div>
+                  <div class="card user-2 mt-6 lg:ml-44 lg:w-[400px] lg:h-[200px] image-full">
+                    <figure><img src="./images/coolBak.png" class="container" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl text-red-500 font-bold">Blood</h2>
+                      <p class="font-bold text-xl underline text-red-500"><i class="fa-solid fa-droplet"></i> O+ (Positive)</p>
+                      <p class="font-bold underline"><i class="fa-solid fa-address-card"></i> Bhaluka, Mymensingh</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-10">
+      <div>
+        <div class="diff h-screen aspect-[14/7]">
+          <div class="diff-item-1">
+            <div class="bg-primary text-primary-content text-3xl lg:text-5xl font-black grid place-content-center">
+              <h2 class="text-red-500 lg:ml-[50%] my-5 underline underline-offset-4 p-2 ml-[10%]">Krishnan</h2>
+              <p class="lg:ml-[50%] p-2 ml-[10%]">Without Krishnaknowledge
+                <br> we can't be blissful</p> </div>
+          </div>
+          <div class="diff-item-2">
+            <div class="bg-base-200 underline underline-offset-4 lg:text-7xl text-5xl font-black grid place-content-center p-2"> <h3>I Love <span class="text-primary">Krishna</span></h3>
+              <img src="./images/krishna1.jpg" class="p-2 lg:w-[50%] w-[90%] rounded-2xl shadow-xl lg:mt-7" alt="">
+            </div>
+          </div>
+          <div class="diff-resizer"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="hero min-h-screen gap-8 p-1 bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <!-- phone -->
+          <div class="mockup-phone p-2 border-primary">
+            <div class="camera"></div> 
+            <div class="display">
+              <div class="artboard artboard-demo phone-0">
+                <!-- chate -->
+                <div class="chat m-1 mt-9 min-h-full chat-start">
+                  <div class="chat-image avatar">
+                    <div class="w-10 mx-0 rounded-full">
+                      <img alt="Tailwind CSS chat bubble component" src="./images/chat0.jpg" />
+                    </div>
+                  </div>
+                  <div class="chat-header">
+                    Radha Rani
+                    <time class="text-xs opacity-50">12:45</time>
+                  </div>
+                  <div class="chat-bubble bg-blue-600 text-white">Hare Krishna. Did you get Prasad?</div>
+                  <div class="chat-footer opacity-50">
+                    Delivered
+                  </div>
+                </div>
+                <div class="chat chat-end">
+                  <div class="chat-image avatar">
+                    <div class="w-10 rounded-full">
+                      <img alt="Tailwind CSS chat bubble component" src="./images/chate1.jpg" />
+                    </div>
+                  </div>
+                  <div class="chat-header">
+                    Krsnanando
+                    <time class="text-xs opacity-50">12:46</time>
+                  </div>
+                  <div class="chat-bubble bg-blue-600 text-white">No, I haven't found you yet .</div>
+                  <div class="chat-footer opacity-50">
+                    Seen at 12:46
+                  </div>
+                </div>
+                <!-- chate 2 -->
+                <div class="chat m-1 chat-start">
+                  <div class="chat-image avatar">
+                    <div class="w-10 mx-0 rounded-full">
+                      <img alt="Tailwind CSS chat bubble component" src="./images/chat0.jpg" />
+                    </div>
+                  </div>
+                  <div class="chat-header">
+                    Radha Rani
+                    <time class="text-xs opacity-50">12:45</time>
+                  </div>
+                  <div class="">
+                    <figure>
+                      <img src="./images/message.jpg" class="w-[80px] lg:w-[120px] rounded-xl" alt="">
+                      <p class="mt-1 bg-blue-600 text-white chat-bubble">The messages are not real, just for fun!</p>
+                    </figure>
+                  </div>
+                  <div class="chat-footer opacity-50">
+                    Delivered
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- card -->
+            <div>
+              <div class="card lg:card-side shadow-xl">
+                <figure><img src="./images/message.jpg" class="lg:w-[350px] rounded-l-2xl" alt="Album"/></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-primary text-5xl font-extrabold underline underline-offset-4">I S K O N</h2>
+                  <p class="lg:w-[320px] w-full">ISKCON, or the International Society for Krishna Consciousness, is a global spiritual organization founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. It promotes the practice of bhakti yoga (devotion) to Lord Krishna and aims to spread the teachings of ancient Vedic scriptures, particularly the Bhagavad Gita. ISKCON members engage in chanting the Hare Krishna mantra, congregational worship, and various outreach activities to foster spiritual growth and awareness. The organization has temples and centers worldwide, emphasizing community, vegetarianism, and a holistic approach to personal and societal well-being.
+                  </p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Listen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
